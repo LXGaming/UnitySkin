@@ -8,15 +8,19 @@
 `java -jar <UnitySkin File Name>`
 
 ## Compatibility
-- Unity 2018.3.5 (Confirmed for Windows)
-- Unity 2018.2.20 (Unconfirmed)
-- Unity 2018.1.9 (Unconfirmed)
-- Unity 2017.4.20 (Unconfirmed)
-- Unity 2017.3.1 (Unconfirmed)
-- Unity 2017.2.5 (Unconfirmed)
-- Unity 2017.1.5 (Unconfirmed)
-- Unity 5.6.6 (Unconfirmed)
-- Unity 5.5.6 (Unconfirmed)
+| Version | Linux | Mac OS | Windows | 
+| :-------: | :-----: | :------: | :-------: |
+| 2018.3.6 | :warning: | :warning: | :heavy_check_mark: |
+| 2018.2.20 | :warning: | :warning: | :warning: |
+| 2018.1.9 | :warning: | :warning: | :warning: |
+| 2017.4.20 | :warning: | :warning: | :warning: |
+| 2017.3.1 | :warning: | :warning: | :warning: |
+| 2017.2.5 | :warning: | :warning: | :warning: |
+| 2017.1.5 | :warning: | :warning: | :warning: |
+| 5.6.6 | :warning: | :warning: | :warning: |
+| 5.5.6 | :warning: | :warning: | :warning: |
+
+:heavy_check_mark: - Working | :warning: - Unknown | :x: - Not Working
 
 ## License
 UnitySkin is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license.
