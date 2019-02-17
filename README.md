@@ -5,20 +5,22 @@
 [![Paypal](https://lxgaming.github.io/badges/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZUUA6LE7YS44&item_name=UnitySkin+(from+GitHub.com))
 
 ## Usage
-`java -jar <UnitySkin File Name>`
+`java -jar <UnitySkin File Name> [-debug | -dev]`
 
 ## Compatibility
 | Version | Linux | Mac OS | Windows | 
 | :-------: | :-----: | :------: | :-------: |
+| 2019.2.0a4 | :warning: | :warning: | :heavy_check_mark: |
+| 2019.1.0b3 | :warning: | :warning: | :heavy_check_mark: |
 | 2018.3.6 | :warning: | :warning: | :heavy_check_mark: |
-| 2018.2.20 | :warning: | :warning: | :warning: |
-| 2018.1.9 | :warning: | :warning: | :warning: |
-| 2017.4.20 | :warning: | :warning: | :warning: |
-| 2017.3.1 | :warning: | :warning: | :warning: |
-| 2017.2.5 | :warning: | :warning: | :warning: |
-| 2017.1.5 | :warning: | :warning: | :warning: |
-| 5.6.6 | :warning: | :warning: | :warning: |
-| 5.5.6 | :warning: | :warning: | :warning: |
+| 2018.2.20 | :warning: | :warning: | :heavy_check_mark: |
+| 2018.1.9 | :warning: | :warning: | :heavy_check_mark: |
+| 2017.4.20 | :warning: | :warning: | :heavy_check_mark: |
+| 2017.3.1 | :warning: | :warning: | :heavy_check_mark: |
+| 2017.2.5 | :warning: | :warning: | :heavy_check_mark: |
+| 2017.1.5 | :warning: | :warning: | :heavy_check_mark: |
+| 5.6.6 | :warning: | :warning: | :heavy_check_mark: |
+| 5.5.6 | :warning: | :warning: | :heavy_check_mark: |
 
 :heavy_check_mark: - Working | :warning: - Unknown | :x: - Not Working
 

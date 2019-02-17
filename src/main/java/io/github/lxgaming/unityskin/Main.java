@@ -16,7 +16,7 @@
 
 package io.github.lxgaming.unityskin;
 
-import io.github.lxgaming.unityskin.util.Data;
+import io.github.lxgaming.unityskin.data.SkinData;
 import io.github.lxgaming.unityskin.util.Logger;
 import io.github.lxgaming.unityskin.util.Reference;
 import io.github.lxgaming.unityskin.util.Toolbox;
@@ -66,7 +66,7 @@ public class Main {
         }
         
         UnitySkin.getInstance().getLogger().info("Select skin to apply:");
-        List<Data.Skin> skins = Toolbox.newArrayList(Data.Skin.values());
+        List<SkinData> skins = UnitySkin.getInstance().getCurrentUnity().getSkins();
         for (int index = 0; index < skins.size(); index++) {
             UnitySkin.getInstance().getLogger().info("{} - {}", index, skins.get(index));
         }

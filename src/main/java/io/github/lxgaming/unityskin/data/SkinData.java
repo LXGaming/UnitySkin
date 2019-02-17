@@ -14,15 +14,28 @@
  * limitations under the License.
  */
 
-package io.github.lxgaming.unityskin.util;
+package io.github.lxgaming.unityskin.data;
 
-public class Reference {
+public class SkinData {
     
-    public static final String ID = "unityskin";
-    public static final String NAME = "UnitySkin";
-    public static final String VERSION = "1.1.0";
-    public static final String DESCRIPTION = "Unity Skin";
-    public static final String AUTHORS = "LX_Gaming";
-    public static final String SOURCE = "https://github.com/LXGaming/UnitySkin/";
-    public static final String WEBSITE = "https://lxgaming.github.io/";
+    private final String name;
+    private final int value;
+    
+    public SkinData(String name, int value) {
+        this.name = name;
+        this.value = value;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public int getValue() {
+        return value;
+    }
+    
+    @Override
+    public String toString() {
+        return getName();
+    }
 }

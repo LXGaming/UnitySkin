@@ -16,7 +16,9 @@
 
 package io.github.lxgaming.unityskin;
 
-import io.github.lxgaming.unityskin.util.Data;
+import io.github.lxgaming.unityskin.data.SkinData;
+import io.github.lxgaming.unityskin.data.UnityData;
+import io.github.lxgaming.unityskin.manager.DataManager;
 import io.github.lxgaming.unityskin.util.Logger;
 import io.github.lxgaming.unityskin.util.Toolbox;
 
@@ -25,15 +27,14 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import java.util.Optional;
 
 public class UnitySkin {
     
     private static UnitySkin instance;
     private final Logger logger;
     private long currentPosition;
-    private Data.Skin currentSkin;
-    private Data.Unity currentUnity;
+    private SkinData currentSkin;
+    private UnityData currentUnity;
     
     private UnitySkin() {
         instance = this;
@@ -52,6 +53,7 @@ public class UnitySkin {
             UnitySkin.getInstance().getLogger().info("Shutting down...");
         }));
         
+        DataManager.prepare();
         return true;
     }
     
@@ -60,16 +62,16 @@ public class UnitySkin {
         currentSkin = null;
         currentUnity = null;
         
-        for (Data.Unity unity : Data.Unity.values()) {
+        for (UnityData unity : DataManager.getUnityData()) {
             try {
                 getLogger().info("Searching for Unity {} region...", unity);
-                currentPosition = Toolbox.findRegion(path, unity.getRegion()) + unity.getJumpInstructionOffset();
-                int value = Toolbox.readByte(path, currentPosition);
+                currentPosition = Toolbox.findRegion(path, unity.getRegion()) + unity.getOffset();
+                int value = Toolbox.readByte(path, getCurrentPosition());
                 
-                getLogger().debug("Located skin value {} @ {}", Toolbox.toHexString(value), Toolbox.toHexString(currentPosition));
+                getLogger().debug("Located skin value {} @ {}", Toolbox.toHexString(value), Toolbox.toHexString(getCurrentPosition()));
                 
-                currentSkin = getSkin(value).orElse(null);
                 currentUnity = unity;
+                currentSkin = DataManager.getSkin(getCurrentUnity(), value).orElse(null);
                 break;
             } catch (EOFException ex) {
                 getLogger().debug("Encountered an error while searching for Unity {}: {}", unity, ex);
@@ -79,21 +81,21 @@ public class UnitySkin {
             }
         }
         
-        if (currentUnity == null) {
+        if (getCurrentUnity() == null) {
             getLogger().error("Failed to identify Unity version");
             return false;
         }
         
-        if (currentSkin == null) {
+        if (getCurrentSkin() == null) {
             getLogger().error("Failed to identify Unity skin");
             return false;
         }
         
-        getLogger().info("Identified as Unity {} ({})", currentUnity, currentSkin);
+        getLogger().info("Identified as Unity {} ({})", getCurrentUnity(), getCurrentSkin());
         return true;
     }
     
-    public void execute(Path path, Data.Skin skin) {
+    public void execute(Path path, SkinData skin) {
         try {
             Path temporaryPath = Toolbox.getPath().resolve(path.getFileName() + ".tmp");
             getLogger().info("Creating temporary file ({})", temporaryPath);
@@ -101,11 +103,11 @@ public class UnitySkin {
             Files.copy(path, temporaryPath);
             
             getLogger().info("Modifying {}", temporaryPath);
-            Toolbox.writeByte(temporaryPath, currentPosition, (byte) skin.getValue());
+            Toolbox.writeByte(temporaryPath, getCurrentPosition(), (byte) skin.getValue());
             
             getLogger().info("Verifying...");
-            int value = Toolbox.readByte(temporaryPath, currentPosition);
-            getLogger().debug("Located skin value {} @ {}", Toolbox.toHexString(value), Toolbox.toHexString(currentPosition));
+            int value = Toolbox.readByte(temporaryPath, getCurrentPosition());
+            getLogger().debug("Located skin value {} @ {}", Toolbox.toHexString(value), Toolbox.toHexString(getCurrentPosition()));
             
             if (skin.getValue() != value) {
                 getLogger().error("Verification failed");
@@ -128,21 +130,23 @@ public class UnitySkin {
         }
     }
     
-    private Optional<Data.Skin> getSkin(int value) {
-        for (Data.Skin skin : Data.Skin.values()) {
-            if (skin.getValue() == value) {
-                return Optional.of(skin);
-            }
-        }
-        
-        return Optional.empty();
-    }
-    
     public static UnitySkin getInstance() {
         return instance;
     }
     
     public Logger getLogger() {
         return logger;
+    }
+    
+    public long getCurrentPosition() {
+        return currentPosition;
+    }
+    
+    public SkinData getCurrentSkin() {
+        return currentSkin;
+    }
+    
+    public UnityData getCurrentUnity() {
+        return currentUnity;
     }
 }
