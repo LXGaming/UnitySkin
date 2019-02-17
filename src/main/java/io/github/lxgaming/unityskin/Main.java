@@ -49,7 +49,7 @@ public class Main {
         UnitySkin.getInstance().getLogger().info("Website: {}", Reference.WEBSITE);
         
         if (System.console() == null && !System.getProperty("java.class.path").contains("idea_rt.jar")) {
-            UnitySkin.getInstance().getLogger().error("Failed to detected Console");
+            UnitySkin.getInstance().getLogger().error("Failed to detect Console");
             return;
         }
         
