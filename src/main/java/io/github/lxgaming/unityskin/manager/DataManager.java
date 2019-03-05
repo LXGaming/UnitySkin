@@ -30,7 +30,7 @@ public class DataManager {
     
     public static void prepare() {
         register(new UnityData(
-                "2019.2.0a6, 2019.1.0b4",
+                "2019.2.0a7, 2019.1.0b5",
                 new int[]{
                         0x76, 0x0B, 0x48,
                         0x8D, 0x54, 0x24, 0x58,
@@ -48,7 +48,7 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.3.6",
+                "2018.3.7",
                 new int[]{
                         0x8D, 0x54, 0x24, 0x20,
                         0x4C, 0x89, 0x44, 0x24,
@@ -66,7 +66,7 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.2.20, 2018.1.9, 2017.4.21, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.6, 5.5.6",
+                "2018.2.21, 2018.1.9, 2017.4.22, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
                 new int[]{
                         0x40, 0x53, 0x48, 0x83,
                         0xEC, 0x20, 0x48, 0x8B,
