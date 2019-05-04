@@ -11,16 +11,16 @@
 | Version | Linux | Mac OS | Windows | 
 | :-------: | :-----: | :------: | :-------: |
 | 2019.2.0a9 | :warning: | :warning: | :heavy_check_mark: |
-| 2019.1.0b9 | :warning: | :warning: | :heavy_check_mark: |
-| 2018.3.11 | :warning: | :warning: | :heavy_check_mark: |
+| 2019.1.1 | :warning: | :warning: | :heavy_check_mark: |
+| 2018.3.14 | :warning: | :warning: | :heavy_check_mark: |
 | 2018.2.21 | :warning: | :warning: | :heavy_check_mark: |
-| 2018.1.9 | :warning: | :warning: | :heavy_check_mark: |
-| 2017.4.24 | :warning: | :warning: | :heavy_check_mark: |
-| 2017.3.1 | :warning: | :warning: | :heavy_check_mark: |
-| 2017.2.5 | :warning: | :warning: | :heavy_check_mark: |
-| 2017.1.5 | :warning: | :warning: | :heavy_check_mark: |
-| 5.6.7 | :warning: | :warning: | :heavy_check_mark: |
-| 5.5.6 | :warning: | :warning: | :heavy_check_mark: |
+| 2018.1.9 | - | :warning: | :heavy_check_mark: |
+| 2017.4.26 | :warning: | :warning: | :heavy_check_mark: |
+| 2017.3.1 | - | :warning: | :heavy_check_mark: |
+| 2017.2.5 | - | :warning: | :heavy_check_mark: |
+| 2017.1.5 | - | :warning: | :heavy_check_mark: |
+| 5.6.7 | - | :warning: | :heavy_check_mark: |
+| 5.5.6 | - | :warning: | :heavy_check_mark: |
 
 :heavy_check_mark: - Working | :warning: - Unknown | :x: - Not Working
 
