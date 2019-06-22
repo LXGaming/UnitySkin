@@ -23,6 +23,6 @@ public class Reference {
     public static final String VERSION = "1.1.1";
     public static final String DESCRIPTION = "Unity Skin";
     public static final String AUTHORS = "LX_Gaming";
-    public static final String SOURCE = "https://github.com/LXGaming/UnitySkin/";
+    public static final String SOURCE = "https://github.com/LXGaming/UnitySkin";
     public static final String WEBSITE = "https://lxgaming.github.io/";
 }
