@@ -30,7 +30,7 @@ public class DataManager {
     
     public static void prepare() {
         register(new UnityData(
-                "2019.1.7",
+                "2019.1.12",
                 new int[]{
                         0x76, 0x0B, 0x48,
                         0x8D, 0x54, 0x24, 0x58,
@@ -48,7 +48,25 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.4.2, 2018.3.14",
+                "2018.4.5",
+                new int[]{
+                        0x76, 0x0B, 0x48, 0x8D,
+                        0x54, 0x24, 0x48, 0xE8,
+                        0xB5, 0x89, 0x32, 0xFF,
+                        0x90, 0x40, 0x84, 0xFF,
+                        0x00, // Target
+                        0x04, 0x33, 0xC0,
+                        0xEB, 0x02, 0x8B, 0x03,
+                        0x48, 0x8B, 0x4C, 0x24,
+                        0x58, 0x48, 0x33, 0xCC,
+                        0xE8, 0x2C, 0x4D, 0x22
+                }, 16,
+                new SkinData("Professional", 0x75),
+                new SkinData("Personal", 0x74)
+        ));
+        
+        register(new UnityData(
+                "2018.3.14",
                 new int[]{
                         0x8D, 0x54, 0x24, 0x20,
                         0x4C, 0x89, 0x44, 0x24,
@@ -66,7 +84,7 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.2.21, 2018.1.9, 2017.4.29, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
+                "2018.2.21, 2018.1.9, 2017.4.30, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
                 new int[]{
                         0x40, 0x53, 0x48, 0x83,
                         0xEC, 0x20, 0x48, 0x8B,
