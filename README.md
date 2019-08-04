@@ -10,7 +10,7 @@
 ## Compatibility
 | Version | Linux | Mac OS | Windows | 
 | :-------: | :-----: | :------: | :-------: |
-| 2019.2.0 | :warning: | :warning: | :x: |
+| 2019.2.0 | :warning: | :warning: | :heavy_check_mark: |
 | 2019.1.13 | :warning: | :warning: | :heavy_check_mark: |
 | 2018.4.5 | :warning: | :warning: | :heavy_check_mark: |
 | 2018.3.14 | :warning: | :warning: | :heavy_check_mark: |

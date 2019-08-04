@@ -28,7 +28,26 @@ public class DataManager {
     
     private static final List<UnityData> UNITY_DATA = Toolbox.newArrayList();
     
+    // https://github.com/LXGaming/UnitySkin/wiki
     public static void prepare() {
+        register(new UnityData(
+                "2019.2.0",
+                new Integer[]{
+                        0x11, 0x39, 0x05, 0x4C,
+                        0xE8, 0x93, 0x06, 0x7F,
+                        0x36, 0x80, 0x3D, 0x3F,
+                        0xE8, 0x93, 0x06, 0x00,
+                        null, // Target
+                        0x15, 0x33, 0xC0,
+                        0xEB, 0x13, 0x90, 0x49,
+                        0xFF, 0xC0, 0x42, 0x80,
+                        0x3C, 0x03, 0x00, 0x0F,
+                        0x84, 0x84
+                }, 16,
+                new SkinData("Professional", 0x74),
+                new SkinData("Personal", 0x75)
+        ));
+        
         register(new UnityData(
                 "2019.1.13",
                 new Integer[]{
