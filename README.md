@@ -7,6 +7,9 @@
 ## Usage
 `java -jar <UnitySkin File Name> [-debug | -dev]`
 
+## Download
+UnitySkin is available on [GitHub](https://github.com/LXGaming/UnitySkin/releases)
+
 ## Compatibility
 | Version | Linux | Mac OS | Windows | 
 | :-------: | :-----: | :------: | :-------: |
