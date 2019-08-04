@@ -55,7 +55,7 @@ public class Toolbox {
         }
     }
     
-    public static long findRegion(Path path, int[] region) throws IOException {
+    public static long findRegion(Path path, Integer[] region) throws IOException {
         try (InputStream inputStream = Toolbox.newBufferedInputStream(Files.newInputStream(path, StandardOpenOption.READ))) {
             long count = 0;
             int index = 0;
@@ -65,7 +65,7 @@ public class Toolbox {
                 count++;
                 
                 result = result & 0xFF;
-                if (region[index] != result && region[index] != 0x00) {
+                if (region[index] != null && region[index] != result) {
                     index = 0;
                     continue;
                 }

@@ -24,17 +24,17 @@ import java.util.List;
 public class UnityData {
     
     private final String name;
-    private final int[] region;
+    private final Integer[] region;
     private final int offset;
     private final List<SkinData> skins = Toolbox.newArrayList();
     
-    private UnityData(String name, int[] region, int offset) {
+    private UnityData(String name, Integer[] region, int offset) {
         this.name = name;
         this.region = region;
         this.offset = offset;
     }
     
-    public UnityData(String name, int[] region, int offset, SkinData... skins) {
+    public UnityData(String name, Integer[] region, int offset, SkinData... skins) {
         this(name, region, offset);
         Collections.addAll(this.skins, skins);
     }
@@ -43,7 +43,7 @@ public class UnityData {
         return name;
     }
     
-    public int[] getRegion() {
+    public Integer[] getRegion() {
         return region;
     }
     

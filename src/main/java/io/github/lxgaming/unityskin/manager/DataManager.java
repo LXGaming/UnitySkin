@@ -31,30 +31,30 @@ public class DataManager {
     public static void prepare() {
         register(new UnityData(
                 "2019.1.12",
-                new int[]{
-                        0x76, 0x0B, 0x48,
+                new Integer[]{
+                        0x00, 0x76, 0x0B, 0x48,
                         0x8D, 0x54, 0x24, 0x58,
-                        0xE8, 0x00, 0x00, 0x00,
+                        0xE8, 0xCD, 0x9C, 0xD3,
                         0x00, 0x90, 0x84, 0xDB,
-                        0x00, // Target
+                        null, // Target
                         0x04, 0x33, 0xC0,
                         0xEB, 0x02, 0x8B, 0x07,
                         0x4C, 0x8D, 0x5C, 0x24,
                         0x70, 0x49, 0x8B, 0x5B,
                         0x10, 0x49, 0x8B, 0x6B
-                }, 15,
+                }, 16,
                 new SkinData("Professional", 0x75),
                 new SkinData("Personal", 0x74)
         ));
         
         register(new UnityData(
                 "2018.4.5",
-                new int[]{
+                new Integer[]{
                         0x76, 0x0B, 0x48, 0x8D,
                         0x54, 0x24, 0x48, 0xE8,
                         0xB5, 0x89, 0x32, 0xFF,
                         0x90, 0x40, 0x84, 0xFF,
-                        0x00, // Target
+                        null, // Target
                         0x04, 0x33, 0xC0,
                         0xEB, 0x02, 0x8B, 0x03,
                         0x48, 0x8B, 0x4C, 0x24,
@@ -67,12 +67,12 @@ public class DataManager {
         
         register(new UnityData(
                 "2018.3.14",
-                new int[]{
+                new Integer[]{
                         0x8D, 0x54, 0x24, 0x20,
                         0x4C, 0x89, 0x44, 0x24,
                         0x20, 0x48, 0x8B, 0x00,
                         0xFF, 0x10, 0x84, 0xC0,
-                        0x00, // Target
+                        null, // Target
                         0x08, 0x33, 0xC0,
                         0x48, 0x83, 0xC4, 0x30,
                         0x5B, 0xC3, 0x8B, 0x03,
@@ -85,12 +85,12 @@ public class DataManager {
         
         register(new UnityData(
                 "2018.2.21, 2018.1.9, 2017.4.30, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
-                new int[]{
+                new Integer[]{
                         0x40, 0x53, 0x48, 0x83,
                         0xEC, 0x20, 0x48, 0x8B,
-                        0xD9, 0xE8, 0x00, 0x00,
-                        0x00, 0x00, 0x84, 0xC0,
-                        0x00, // Target
+                        0xD9, 0xE8, null, null,
+                        null, null, 0x84, 0xC0,
+                        null, // Target
                         0x08, 0x33, 0xC0,
                         0x48, 0x83, 0xC4, 0x20,
                         0x5B, 0xC3, 0x8B, 0x03,
