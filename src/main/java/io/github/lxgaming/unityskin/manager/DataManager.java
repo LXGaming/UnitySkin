@@ -30,7 +30,7 @@ public class DataManager {
     
     public static void prepare() {
         register(new UnityData(
-                "2019.1.12",
+                "2019.1.13",
                 new Integer[]{
                         0x00, 0x76, 0x0B, 0x48,
                         0x8D, 0x54, 0x24, 0x58,
