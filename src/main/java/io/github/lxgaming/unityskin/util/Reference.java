@@ -20,7 +20,7 @@ public class Reference {
     
     public static final String ID = "unityskin";
     public static final String NAME = "UnitySkin";
-    public static final String VERSION = "1.2.0";
+    public static final String VERSION = "1.2.1";
     public static final String DESCRIPTION = "Unity Skin";
     public static final String AUTHORS = "LX_Gaming";
     public static final String SOURCE = "https://github.com/LXGaming/UnitySkin";

@@ -31,29 +31,29 @@ public class DataManager {
     // https://github.com/LXGaming/UnitySkin/wiki
     public static void prepare() {
         register(new UnityData(
-                "2019.2.0",
+                "2019.2.3",
                 new Integer[]{
-                        0x11, 0x39, 0x05, 0x4C,
-                        0xE8, 0x93, 0x06, 0x7F,
-                        0x36, 0x80, 0x3D, 0x3F,
-                        0xE8, 0x93, 0x06, 0x00,
+                        0x11, 0x39, 0x05, null,
+                        null, 0x93, 0x06, 0x7F,
+                        0x36, 0x80, 0x3D, null,
+                        null, 0x93, 0x06, 0x00,
                         null, // Target
                         0x15, 0x33, 0xC0,
                         0xEB, 0x13, 0x90, 0x49,
                         0xFF, 0xC0, 0x42, 0x80,
                         0x3C, 0x03, 0x00, 0x0F,
-                        0x84, 0x84
+                        0x84, 0x84, 0x00, 0x00
                 }, 16,
                 new SkinData("Professional", 0x74),
                 new SkinData("Personal", 0x75)
         ));
         
         register(new UnityData(
-                "2019.1.13",
+                "2019.1.14",
                 new Integer[]{
                         0x00, 0x76, 0x0B, 0x48,
                         0x8D, 0x54, 0x24, 0x58,
-                        0xE8, 0xCD, 0x9C, 0xD3,
+                        0xE8, null, null, 0xD3,
                         0x00, 0x90, 0x84, 0xDB,
                         null, // Target
                         0x04, 0x33, 0xC0,
@@ -67,18 +67,18 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.4.5",
+                "2018.4.8",
                 new Integer[]{
                         0x76, 0x0B, 0x48, 0x8D,
                         0x54, 0x24, 0x48, 0xE8,
-                        0xB5, 0x89, 0x32, 0xFF,
+                        null, null, 0x32, 0xFF,
                         0x90, 0x40, 0x84, 0xFF,
                         null, // Target
                         0x04, 0x33, 0xC0,
                         0xEB, 0x02, 0x8B, 0x03,
                         0x48, 0x8B, 0x4C, 0x24,
                         0x58, 0x48, 0x33, 0xCC,
-                        0xE8, 0x2C, 0x4D, 0x22
+                        0xE8, null, null, 0x22
                 }, 16,
                 new SkinData("Professional", 0x75),
                 new SkinData("Personal", 0x74)
@@ -103,7 +103,7 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.2.21, 2018.1.9, 2017.4.30, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
+                "2018.2.21, 2018.1.9, 2017.4.31, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
                 new Integer[]{
                         0x40, 0x53, 0x48, 0x83,
                         0xEC, 0x20, 0x48, 0x8B,
