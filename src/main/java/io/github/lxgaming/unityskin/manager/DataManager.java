@@ -31,7 +31,7 @@ public class DataManager {
     // https://github.com/LXGaming/UnitySkin/wiki
     public static void prepare() {
         register(new UnityData(
-                "2019.2.4",
+                "2019.2.9",
                 new Integer[]{
                         0x11, 0x39, 0x05, null,
                         null, null, 0x06, 0x7F,
@@ -67,7 +67,7 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.4.8",
+                "2018.4.11",
                 new Integer[]{
                         0x76, 0x0B, 0x48, 0x8D,
                         0x54, 0x24, 0x48, 0xE8,
@@ -103,7 +103,7 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.2.21, 2018.1.9, 2017.4.32, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
+                "2018.2.21, 2018.1.9, 2017.4.33, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
                 new Integer[]{
                         0x40, 0x53, 0x48, 0x83,
                         0xEC, 0x20, 0x48, 0x8B,
