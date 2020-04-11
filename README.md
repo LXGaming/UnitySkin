@@ -13,13 +13,14 @@ UnitySkin is available on [GitHub](https://github.com/LXGaming/UnitySkin/release
 ## Compatibility
 | Version | Linux | Mac OS | Windows | 
 | :-------: | :-----: | :------: | :-------: |
-| 2019.2.15 | :warning: | :warning: | :heavy_check_mark: |
+| 2019.3.9 | :warning: | :warning: | :heavy_check_mark: |
+| 2019.2.21 | :warning: | :warning: | :heavy_check_mark: |
 | 2019.1.14 | :warning: | :warning: | :heavy_check_mark: |
-| 2018.4.13 (LTS) | :warning: | :warning: | :heavy_check_mark: |
+| 2018.4.21 (LTS) | :warning: | :warning: | :heavy_check_mark: |
 | 2018.3.14 | :warning: | :warning: | :heavy_check_mark: |
 | 2018.2.21 | :warning: | :warning: | :heavy_check_mark: |
 | 2018.1.9 | - | :warning: | :heavy_check_mark: |
-| 2017.4.35 (LTS) | :warning: | :warning: | :heavy_check_mark: |
+| 2017.4.39 (LTS) | :warning: | :warning: | :heavy_check_mark: |
 | 2017.3.1 | - | :warning: | :heavy_check_mark: |
 | 2017.2.5 | - | :warning: | :heavy_check_mark: |
 | 2017.1.5 | - | :warning: | :heavy_check_mark: |

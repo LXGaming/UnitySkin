@@ -31,7 +31,25 @@ public class DataManager {
     // https://github.com/LXGaming/UnitySkin/wiki
     public static void prepare() {
         register(new UnityData(
-                "2019.2.15",
+                "2019.3.9",
+                new Integer[]{
+                        0x45, 0x65, 0x0F, 0x07,
+                        0xE8, 0x2C, 0x1F, 0xBA,
+                        0x03, 0x83, 0x3D, 0x39,
+                        0x65, 0x0F, 0x07, 0xFF,
+                        null, // Target
+                        0xB5, 0xE8, 0xFE,
+                        0xB6, 0xD4, 0x01, 0x48,
+                        0x8B, 0xF0, 0x48, 0x8B,
+                        0x08, 0x48, 0x8B, 0x69,
+                        0x08, 0x48, 0x8B, 0x1D
+                }, 16,
+                new SkinData("Professional", 0x74),
+                new SkinData("Personal", 0x75)
+        ));
+        
+        register(new UnityData(
+                "2019.2.21",
                 new Integer[]{
                         0x11, 0x39, 0x05, null,
                         null, null, 0x06, 0x7F,
@@ -67,11 +85,11 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.4.13",
+                "2018.4.21",
                 new Integer[]{
                         0x76, 0x0B, 0x48, 0x8D,
                         0x54, 0x24, 0x48, 0xE8,
-                        null, null, 0x32, 0xFF,
+                        null, null, null, 0xFF,
                         0x90, 0x40, 0x84, 0xFF,
                         null, // Target
                         0x04, 0x33, 0xC0,
@@ -103,7 +121,7 @@ public class DataManager {
         ));
         
         register(new UnityData(
-                "2018.2.21, 2018.1.9, 2017.4.35, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
+                "2018.2.21, 2018.1.9, 2017.4.39, 2017.3.1, 2017.2.5, 2017.1.5, 5.6.7, 5.5.6",
                 new Integer[]{
                         0x40, 0x53, 0x48, 0x83,
                         0xEC, 0x20, 0x48, 0x8B,
