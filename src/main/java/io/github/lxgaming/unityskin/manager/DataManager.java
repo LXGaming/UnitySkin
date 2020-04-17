@@ -31,12 +31,12 @@ public class DataManager {
     // https://github.com/LXGaming/UnitySkin/wiki
     public static void prepare() {
         register(new UnityData(
-                "2019.3.9",
+                "2019.3.10",
                 new Integer[]{
-                        0x11, 0x39, 0x05, 0x84,
-                        0x65, 0x0F, 0x07, 0x7F,
-                        0x36, 0x80, 0x3D, 0x77,
-                        0x65, 0x0F, 0x07, 0x00,
+                        0x11, 0x39, 0x05, null,
+                        null, 0x0F, 0x07, 0x7F,
+                        0x36, 0x80, 0x3D, null,
+                        null, 0x0F, 0x07, 0x00,
                         null, // Target
                         0x15, 0x33, 0xC0,
                         0xEB, 0x13, 0x90, 0x49,
